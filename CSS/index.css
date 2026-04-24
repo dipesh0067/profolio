@@ -42,4 +42,26 @@ nav{
 .menu a:hover{
     color: red;
     font-size: 12px;
+    
+}
+.content{
+   /* background-color: aquamarine;*/
+   /* display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    margin-left: 20px;*/
+    height:100%;
+    width: 100%;
+}
+.content img{
+
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    object-position: top center;
+}
+.background{
+    height: 100%;
+    width: 100%;
+    background-image: url('../RESOURCES/Image/man.png');
 }

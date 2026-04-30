@@ -88,6 +88,7 @@ nav{
    /* background-color: blue;*/
     height: 50 px;
     width: 100%;
+   
 }
 .content img{
 
@@ -95,6 +96,7 @@ nav{
     border-radius: 5%;
     object-fit:cover;
     object-position: top center;
+    
 }
 
 .background{
@@ -109,14 +111,36 @@ ol{
     width: 50px;
     padding: 100px;
 }
+.about_body{
+    background-color: #007498;
+    height : 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
 .form{
-    width: 25%;
+    width: 400px;
+    height: fit-content;
     margin: 0px auto;
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    right: 0px;
+    button: 0px;
+    box-shadow: 1px 1px 20px white;
+    border-radius: 0%;
 }
 .form_menu{
     display: flex;
     flex-direction: column;
+    gap: 6px;
 }
 .form_menu label{
     font-size: 18px;
@@ -126,7 +150,63 @@ ol{
     height: 40px;
     padding:0px 6px;
     border-radius: 10px;
+    border: 1px solid gray;
 }
+.form_menu input:placeholder{
+     text-transform: capitalize;
+}
+.form_check{
+    display:flex;
+    align-items: center;
+    font-size:12px;
+
+}
+.form_check label{
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.form_button{
+    height : 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: bisque;
+}
+.form_button .button{
+    color:blueviolet;
+    height:100%;
+    width:100%;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+    position:absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100%;
+
+
+}
+.animation_button {
+    width: 100%;
+    height: 100%;
+    background-color: goldenrod;
+    position: absolute;
+    z-index: -1;
+    transition: all 5s ease in out ;
+}
+.form_button:hover .animation_button{
+    width: 100%;
+}
+
+
 @keyframes buttonanimate{
     0%{
         background-color: rgb(255, 21, 21);
